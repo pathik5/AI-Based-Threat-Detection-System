@@ -1,20 +1,16 @@
-# CyberShied ( https://cybershied.onrender.com )👈 👈 Click For Demo.
-A web-based AI-powered malware detection system integrating PE header analysis for .exe files, URL threat checks, file hash lookups, and extension verification. Designed for fast, reliable detection to support cybersecurity analysis and threat mitigation.
+# AI-Based Threat Detection System
 
-
-# 🔒 Advanced Malware Detection System
-
-A web-based AI-powered malware detection platform that integrates multiple analysis techniques to identify malicious files and URLs. Built for cybersecurity enthusiasts, students, and analysts, this system enables intelligent threat detection through an interactive and unified interface.
+A web-based AI-powered threat detection system that integrates PE header analysis for `.exe` files, URL threat checks, file hash lookups, and extension verification. Designed for fast, reliable detection to support cybersecurity analysis and threat mitigation.
 
 ---
 
 ## 🚀 Features
 
 - **PE Header-Based `.exe` File Analysis**  
-  Detects malicious Windows executable files using machine learning on PE header features.
+  Detects malicious Windows executable files using a machine learning model (Random Forest) trained on PE header features.
 
 - **URL Safety Checker**  
-  Analyzes URLs for phishing, malware, or suspicious behavior using trained models and threat intelligence.
+  Analyzes URLs for phishing, malware, or suspicious behavior using the VirusTotal API.
 
 - **File Hash Analysis**  
   Checks file hashes against known malware databases (like VirusTotal).
@@ -28,51 +24,46 @@ A web-based AI-powered malware detection platform that integrates multiple analy
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Python, Flask  
-- **Machine Learning:** Scikit-learn, XGBoost  
-- **Libraries/Tools:** PEfile, hashlib, requests, joblib
+- **Machine Learning:** scikit-learn (Random Forest)  
+- **Libraries/Tools:** PEfile, hashlib, requests, pandas
 
 ---
 
-## 📦 Installation & Usage
+## 📦 How to Run
 
-### 1. Clone the Repository
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/pathik5/AI-Based-Threat-Detection-System.git
+   cd AI-Based-Threat-Detection-System
+   ```
 
-```bash
-git clone https://github.com/yourusername/Advanced-Malware-Detection-System.git
-cd Advanced-Malware-Detection-System
-```
+2. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-### 2. Install Requirements
+3. **Make sure `MalwareDataSet.csv` is present in the project directory.**
 
-```bash
-pip install -r requirements.txt
-```
+4. **Set your VirusTotal API key (if needed):**
+   - Edit the configuration or set as an environment variable if required by your code.
 
-### 3. Run the Application
-
-```bash
-python app/main.py
-```
-
-Then, open your browser and go to:
-`http://localhost:5000`
+5. **Run the application:**
+   ```sh
+   python app.py
+   ```
+   The app will be available at [http://localhost:5000](http://localhost:5000).
 
 ---
 
 ## 📁 Project Structure
 
 ```
-Advanced-Malware-Detection-System/
+AI-Based-Threat-Detection-System/
 │
-├── app/                    # Backend logic & ML code
-│   ├── main.py
-│   ├── model.pkl
-│   └── ...
-├── frontend/               # HTML/CSS/JS files
-├── static/
-├── templates/
-├── utils/                  # Helper scripts
-├── dataset/                # Sample data (if any)
+├── app.py                  # Main Flask application
+├── MalwareDataSet.csv      # Dataset for training the ML model
+├── static/                 # Static files (images, CSS, JS)
+├── templates/              # HTML templates
 ├── requirements.txt
 ├── README.md
 └── .gitignore
@@ -80,21 +71,20 @@ Advanced-Malware-Detection-System/
 
 ---
 
-## 📄 Project Report
+## ℹ️ Important Notes
 
-feel free to contact me via email.(anjalijaglan07@gmail.com)
-
----
-
-## ⚠️ Disclaimer
-
-This tool is intended for **educational and research purposes only**. Do not use it in production or for malicious activities.
+- The AI model is trained on startup using `MalwareDataSet.csv`.  
+- For URL and hash analysis, a valid VirusTotal API key is required.
+- This project is for educational and research purposes only. Do not use it for malicious activities or in production environments.
 
 ---
 
-## 📬 Contact
+## 📝 License
 
-For questions or collaborations, feel free to contact me via GitHub or email.
+This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
+## 🙋‍♂️ Author
+
+- **GitHub:** [pathik5](https://github.com/pathik5)

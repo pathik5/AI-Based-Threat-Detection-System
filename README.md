@@ -87,8 +87,10 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🙋‍♂️ Author
 
-- **GitHub:** [pathik5](https://github.com/pathik5)
-
+- **GitHub:** [pankaj](https://github.com/pathik5)
+- **GitHub:** [Praduamn](https://github.com/cosmoxthelegend)
+- **GitHub:** [Ayushi](https://github.com/aayushi)
+- **GitHub:** [Geetanjali](https://github.com/geetanjali)
 ---
 
 ## 🌐 GitHub Pages

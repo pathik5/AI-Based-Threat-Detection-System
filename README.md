@@ -89,7 +89,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 - **GitHub:** [pankaj](https://github.com/pathik5)
 - **GitHub:** [Praduamn](https://github.com/CosmoxTheLegend)
-- **GitHub:** [Ayushi](https://github.com/aayushi025)
+- **GitHub:** [Aayushi](https://github.com/aayushi025)
 - **GitHub:** [Geetanjali](https://github.com/geetanjali)
 ---
 

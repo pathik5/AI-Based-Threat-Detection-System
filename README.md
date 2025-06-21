@@ -88,3 +88,15 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## 🙋‍♂️ Author
 
 - **GitHub:** [pathik5](https://github.com/pathik5)
+
+---
+
+## 🌐 GitHub Pages
+
+A static project landing page is available at:  
+[https://pathik5.github.io/AI-Based-Threat-Detection-System/](https://pathik5.github.io/AI-Based-Threat-Detection-System/)
+
+> **Note:**  
+> This page is for informational/demo purposes only. The full application (with all features) runs locally using Python/Flask.
+
+---

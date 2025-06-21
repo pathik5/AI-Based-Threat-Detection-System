@@ -89,7 +89,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 - **GitHub:** [pankaj](https://github.com/pathik5)
 - **GitHub:** [Praduamn](https://github.com/cosmoxthelegend)
-- **GitHub:** [Ayushi](https://github.com/aayushi)
+- **GitHub:** [Ayushi](https://github.com/Aayushi025)
 - **GitHub:** [Geetanjali](https://github.com/geetanjali)
 ---
 

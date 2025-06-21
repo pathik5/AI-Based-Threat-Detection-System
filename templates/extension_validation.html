@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Extension Validation</h2>
+  <form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="file_ext">Upload File</label>
+      <input type="file" class="form-control-file" id="file_ext" name="file_ext" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Validate Extension</button>
+  </form>
+
+  {% if summary %}
+    <hr>
+    <h4>Result: {{ summary }}</h4>
+    <button id="toggleBtn4" class="btn btn-secondary" onclick="toggleDetailed('detailedReport4', 'toggleBtn4')">Show Detailed Report</button>
+    <div id="detailedReport4" style="display: none;">
+      <pre>{{ detailed | tojson(indent=2) }}</pre>
+    </div>
+  {% endif %}
+{% endblock %}

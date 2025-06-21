@@ -1,0 +1,47 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.jumbotron {
+    background-color: #e9ecef;
+    padding: 2rem 1rem;
+}
+
+.alert-container {
+    margin-bottom: 20px;
+}
+/* Centered container */
+.container {
+    max-width: 800px;
+}
+
+/* Custom form styles */
+.custom-file-input:focus ~ .custom-file-label {
+    border-color: #80bdff;
+    box-shadow: none;
+}
+
+/* Modal customizations */
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}

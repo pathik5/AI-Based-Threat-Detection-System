@@ -1,0 +1,15 @@
+Flask==2.2.5
+scikit-learn==1.4.0
+xgboost==2.0.3
+pandas==2.2.1
+numpy==1.26.4
+pefile==2023.2.7
+requests==2.31.0
+joblib==1.4.0
+gunicorn==21.2.0
+Werkzeug==2.2.3
+python-dotenv==1.0.1
+
+tensorflow==2.15.0
+flask-cors==4.0.0
+

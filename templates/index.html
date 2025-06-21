@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron text-center">
+      <h1 class="display-4">AI Based Threat Detection System</h1>
+      <p class="lead">A collection of tools for file and URL analysis.</p>
+  </div>
+  <div class="row">
+      <!-- Malware Analysis -->
+      <div class="col-md-6 col-lg-3">
+          <div class="card mb-4 shadow-sm">
+              <img src="{{ url_for('static', filename='images/malware.png') }}" class="card-img-top" alt="Malware Analysis">
+              <div class="card-body">
+                  <h5 class="card-title">Malware Analysis</h5>
+                  <p class="card-text">Analyze files for malware threats.</p>
+                  <a href="{{ url_for('malware_analysis') }}" class="btn btn-primary btn-block">Go to Tool</a>
+              </div>
+          </div>
+      </div>
+      <!-- URL Detection -->
+      <div class="col-md-6 col-lg-3">
+          <div class="card mb-4 shadow-sm">
+              <img src="{{ url_for('static', filename='images/url.png') }}" class="card-img-top" alt="URL Detection">
+              <div class="card-body">
+                  <h5 class="card-title">URL Detection</h5>
+                  <p class="card-text">Check URLs for safety.(VirusTotal API)</p>
+                  <a href="{{ url_for('url_detection') }}" class="btn btn-primary btn-block">Go to Tool</a>
+              </div>
+          </div>
+      </div>
+      <!-- File Hashing -->
+      <div class="col-md-6 col-lg-3">
+          <div class="card mb-4 shadow-sm">
+              <img src="{{ url_for('static', filename='images/hash.png') }}" class="card-img-top" alt="File Hashing">
+              <div class="card-body">
+                  <h5 class="card-title">File Hashing (SHA-256)</h5>
+                  <p class="card-text">Generate SHA-256 file hashes.</p>
+                  <a href="{{ url_for('hash_file') }}" class="btn btn-primary btn-block">Go to Tool</a>
+              </div>
+          </div>
+      </div>
+      <!-- Extension Validation -->
+      <div class="col-md-6 col-lg-3">
+          <div class="card mb-4 shadow-sm">
+              <img src="{{ url_for('static', filename='images/extension.png') }}" class="card-img-top" alt="Extension Validation">
+              <div class="card-body">
+                  <h5 class="card-title">Extension Validation</h5>
+                  <p class="card-text">Verify if file extensions match their content.</p>
+                  <a href="{{ url_for('extension_validation') }}" class="btn btn-primary btn-block">Go to Tool</a>
+              </div>
+          </div>
+      </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>File Hashing (SHA-256)</h2>
+  <form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="file">Upload File</label>
+      <input type="file" class="form-control-file" id="file" name="file" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Generate Hash</button>
+  </form>
+
+  {% if summary %}
+    <hr>
+    <h4>Result: {{ summary }}</h4>
+    <button id="toggleBtn3" class="btn btn-secondary" onclick="toggleDetailed('detailedReport3', 'toggleBtn3')">Show Detailed Report</button>
+    <div id="detailedReport3" style="display: none;">
+      <pre>{{ detailed | tojson(indent=2) }}</pre>
+    </div>
+  {% endif %}
+{% endblock %}

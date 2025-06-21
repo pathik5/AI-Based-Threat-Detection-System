@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>URL Detection</h2>
+  <form method="post">
+    <div class="form-group">
+      <label for="url">Enter URL</label>
+      <input type="text" class="form-control" id="url" name="url" placeholder="https://example.com" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Check URL</button>
+  </form>
+
+  {% if summary %}
+    <hr>
+    <h4>Result: {{ summary }}</h4>
+    <button id="toggleBtn2" class="btn btn-secondary" onclick="toggleDetailed('detailedReport2', 'toggleBtn2')">Show Detailed Report</button>
+    <div id="detailedReport2" style="display: none;">
+      <pre>{{ detailed | tojson(indent=2) }}</pre>
+    </div>
+  {% endif %}
+{% endblock %}
